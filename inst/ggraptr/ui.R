@@ -20,13 +20,11 @@ shinyUI(bootstrapPage(
         
         div(
           uiOutput(
-            'datasetNameCtrl', style = paste(
-              'float: left; margin-right: 83px; width:-webkit-fill-available;
-              white-space: nowrap;')),
+            'datasetNameCtrl'),
           div(
             uiOutput('uploadDataCtrl', inline = T),
             uiOutput('datasetOptionsCtrl', inline = T),
-            style='float: left; margin-left: -79px; padding-top: 25px')),
+            style='float: left; padding-top: 25px;width:100%')),
         
         conditionalPanel(
           condition = 'input.conditionedPanels == "tableTab"',
